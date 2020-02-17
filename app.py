@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image as img
-from fastai.vision import *
+from fastai.vision import load_learner, open_image
 
 st.title("Pothole identifier")
 st.markdown("by Mark Danovich, mark.danovich@gmail.com")
