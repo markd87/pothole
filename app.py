@@ -1,13 +1,13 @@
 import streamlit as st
-from PIL import Image
-from fastai.vision import load_learner, open_image
+from PIL import Image as img
+from fastai.vision import *
 
 st.title("Pothole identifier")
 st.markdown("by Mark Danovich, mark.danovich@gmail.com")
 
-uploaded_file = st.file_uploader("Choose an image...", type=["jpeg","jpg"])
+uploaded_file = st.file_uploader("Choose an image...", type=["jpeg","jpg", "png"])
 if uploaded_file is not None:
-    image = Image.open(uploaded_file)
+    image = img.open(uploaded_file)
     st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
     st.write("Classifying...")
