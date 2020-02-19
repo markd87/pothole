@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image as img
 from fastai.vision import open_image, load_learner, Learner
-# from fastai import defaults
 import torch
 import fastai
 
