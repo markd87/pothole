@@ -1,5 +1,5 @@
 numpy
-torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
+https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
 fastai
 streamlit
 pillow
